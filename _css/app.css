@@ -1,0 +1,44 @@
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+html {
+	background: rgb(53, 55, 102);
+}
+body {
+	width: 91%;
+	margin:1% auto;
+	box-shadow: 10px 10px 5px #000;
+	border-radius: 3px;
+	padding: 0px 2%;
+	height: auto;
+}
+.tab-content {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.tabpanel {
+	padding: .1px;
+}
+.form-group {
+	width: 92%;
+}
+table .hide {
+	display:none;
+}
+.hidden-input {
+	display:none;
+}
